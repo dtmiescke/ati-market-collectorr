@@ -1,0 +1,13 @@
+app = "ati-market-collector"
+primary_region = "ord"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  ATI_COLLECTOR_ID = "fly-primary"
+  ATI_SYMBOLS = "SPY,QQQ,IWM,DIA,AAPL,MSFT,NVDA,AMZN,META,GOOGL,TSLA,AMD"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
